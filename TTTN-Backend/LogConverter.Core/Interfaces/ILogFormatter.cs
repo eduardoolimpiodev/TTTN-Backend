@@ -1,4 +1,4 @@
-﻿using LogConverter.Core.Entities;
+﻿using LogConverter.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,4 +11,5 @@ namespace LogConverter.Core.Interfaces
     {
         string FormatLogs(IEnumerable<LogEntry> entries);
     }
+
 }

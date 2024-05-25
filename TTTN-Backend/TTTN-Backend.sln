@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TTTN-Backend", "TTTN-Backend\TTTN-Backend.csproj", "{51090F6F-F180-41B8-B9B5-DA711BF5475B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TTTN-Backend", "TTTN-Backend\TTTN-Backend.csproj", "{51090F6F-F180-41B8-B9B5-DA711BF5475B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogConverter.Core", "LogConverter.Core\LogConverter.Core.csproj", "{792C8563-C2B6-4045-9A45-23E07238CEC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{901F2EE8-7086-4EEB-8BAC-1004C2B98F7D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogConverter.Infrastructure", "LogConverter.Infrastructure\LogConverter.Infrastructure.csproj", "{FDDF523A-3960-4981-A698-9F805DE061DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogConverter.App", "LogConverter.App\LogConverter.App.csproj", "{E6CA7D95-D693-44C2-9B36-18CE247F0A01}"
+	ProjectSection(ProjectDependencies) = postProject
+		{792C8563-C2B6-4045-9A45-23E07238CEC4} = {792C8563-C2B6-4045-9A45-23E07238CEC4}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogConverter.Tests", "LogConverter.Tests\LogConverter.Tests.csproj", "{A7A160AB-A418-450C-865A-448366444D31}"
+	ProjectSection(ProjectDependencies) = postProject
+		{792C8563-C2B6-4045-9A45-23E07238CEC4} = {792C8563-C2B6-4045-9A45-23E07238CEC4}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FFC9080B-4C6D-4324-B469-EA80C115BDF0}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +39,22 @@ Global
 		{51090F6F-F180-41B8-B9B5-DA711BF5475B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51090F6F-F180-41B8-B9B5-DA711BF5475B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51090F6F-F180-41B8-B9B5-DA711BF5475B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{792C8563-C2B6-4045-9A45-23E07238CEC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{792C8563-C2B6-4045-9A45-23E07238CEC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{792C8563-C2B6-4045-9A45-23E07238CEC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{792C8563-C2B6-4045-9A45-23E07238CEC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDF523A-3960-4981-A698-9F805DE061DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDF523A-3960-4981-A698-9F805DE061DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDF523A-3960-4981-A698-9F805DE061DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDF523A-3960-4981-A698-9F805DE061DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6CA7D95-D693-44C2-9B36-18CE247F0A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6CA7D95-D693-44C2-9B36-18CE247F0A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6CA7D95-D693-44C2-9B36-18CE247F0A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6CA7D95-D693-44C2-9B36-18CE247F0A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7A160AB-A418-450C-865A-448366444D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7A160AB-A418-450C-865A-448366444D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7A160AB-A418-450C-865A-448366444D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7A160AB-A418-450C-865A-448366444D31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

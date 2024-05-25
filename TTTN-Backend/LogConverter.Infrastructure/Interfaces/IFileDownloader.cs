@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LogConverter.Infrastructure.Interfaces;
 
 
-namespace LogConverter.Core.Interfaces
+namespace LogConverter.Infrastructure.Interfaces
 {
     public interface IFileDownloader
     {
